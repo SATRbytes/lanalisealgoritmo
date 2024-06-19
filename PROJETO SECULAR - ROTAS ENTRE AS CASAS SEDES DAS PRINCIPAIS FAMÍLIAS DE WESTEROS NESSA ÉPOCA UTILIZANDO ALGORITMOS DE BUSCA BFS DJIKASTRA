@@ -19,7 +19,7 @@ Após adicionar as conexões o grafo será exibido usando matplotlib (pyplot). A
 ## Autores
 - Shelda Azevedo
 - Isabella Monte
-- Antonio Palmeira
+- Antônio Palmeira
 
 
 
@@ -34,4 +34,5 @@ Após adicionar as conexões o grafo será exibido usando matplotlib (pyplot). A
  - [Analise de redes sociais com python](https://www.youtube.com/watch?v=tNeL4kNcJ94)
  - [Documentação networkx](https://networkx.org/documentation/stable/index.html)
  - [Grafos em Python](https://www.kaggle.com/code/flaviagg/grafos-em-python)
+ - [Criando algoritmo de pesquisa em largura BFS] (https://dev.to/antiduhring/criando-um-algoritmo-de-pesquisa-em-largura-em-grafos-3af3)
 
