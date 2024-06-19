@@ -38,15 +38,15 @@ class App(QWidget):
         self.comboBoxRelacao.addItems(["ALIADOS", "INIMIGOS", "NEUTROS"])
         layout.addWidget(self.comboBoxRelacao)
 
-        self.buttonAdicionar = QPushButton('Adicionar Conexão', self)
+        self.buttonAdicionar = QPushButton('ADD CONEXÃO', self)
         self.buttonAdicionar.clicked.connect(self.on_click_adicionar)
         layout.addWidget(self.buttonAdicionar)
 
-        self.buttonDesenhar = QPushButton('Desenhar Grafo', self)
+        self.buttonDesenhar = QPushButton('MOSTRAR O GRAFO', self)
         self.buttonDesenhar.clicked.connect(self.on_click_desenhar)
         layout.addWidget(self.buttonDesenhar)
 
-        self.quit_button = QPushButton('Sair', self)
+        self.quit_button = QPushButton('SAIR', self)
         self.quit_button.clicked.connect(self.close)
         layout.addWidget(self.quit_button)
         
@@ -62,7 +62,7 @@ class App(QWidget):
             return
 
         if not adicionar_conexao(familia_1, familia_2, relacao):
-            QMessageBox.warning(self, "Erro", f"Já existe uma relação entre {familia_1} e {familia_2}.")
+            QMessageBox.warning(self, "DE NOVO?", f"Já existe uma relação entre {familia_1} e {familia_2}.")
         else:
             QMessageBox.information(self, "FOI!!!!!!!", f"Relação entre {familia_1} e {familia_2} é {relacao}!")
 
